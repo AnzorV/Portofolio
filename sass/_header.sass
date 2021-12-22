@@ -1,0 +1,81 @@
+.container
+    max-width: 312px
+
+    margin: 0 auto
+
+header
+    background: url(../img/header.jfif)
+    background-position: center center
+
+    background-size: cover
+    // height: 275px
+    position: relative
+    z-index: 4
+
+header::before
+    content: ''
+    position: absolute
+    background-color: rgba(198, 108, 73, 0.4)
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0    
+    z-index: -1
+.navbar
+    display: flex
+    padding-top: 39px
+    width: 211px
+    justify-content: space-between
+    align-items: center
+    position: relative
+h1
+    font-family: Libre Franklin
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 29px
+    
+    color: #FFFFFF
+
+.burger
+    width: 24px
+    height: 21px
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    &__span
+        width: 24px
+        height: 2px
+        display: block
+        background-color: white
+
+.header
+    &__text
+        margin-top: 47px
+        padding-bottom: 50px
+
+        &__2
+            margin-top: 13px
+            margin-bottom: 41px
+
+.menu
+    padding-left: 0
+    padding: absolute
+    top: 43px
+    left: 24px
+    li
+        list-style-type: none
+
+        a
+            text-decoration: none
+            font-family: Libre Franklin
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 22px
+            // identical to box height 
+
+            color: #ffffff
+
+.toggle
+    display: none
